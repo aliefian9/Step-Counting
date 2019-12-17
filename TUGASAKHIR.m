@@ -212,27 +212,34 @@ fVarAlief = fsVarAlief*(0:(LVarAlief/2))/LVarAlief;
 
 hasilVarAlief = filtfilt(SOS, G, trendVarAlief);
 
-figure('Name','FFT of magnitude after detrend','NumberTitle','off')
-subplot(3,4,1);plot(fRizky1020, p1Rizky1020);
-subplot(3,4,2);plot(fAlief1020, p1Alief1020);
-subplot(3,4,3);plot(fJason1020, p1Jason1020);
-
 figure('Name','10 Langkah','NumberTitle','off')
 subplot(3,1,1);plot(hasilRizky1020);findpeaks(hasilRizky1020,1.5);
+title('Rizky 10 steps')
 subplot(3,1,2);plot(hasilAlief1020);findpeaks(hasilAlief1020,1.5);
+title('Alief 10 steps')
 subplot(3,1,3);plot(hasilJason1020);findpeaks(hasilJason1020,1.5);
+title('Jason 10 steps')
 
 figure('Name','20 Langkah','NumberTitle','off')
 subplot(3,1,1);plot(hasilRizky2020);findpeaks(hasilRizky2020,1.5);
+title('Rizky 20 steps')
 subplot(3,1,2);plot(hasilAlief2020);findpeaks(hasilAlief2020,1.5);
+title('Alief 20 steps')
 subplot(3,1,3);plot(hasilJason2020);findpeaks(hasilJason2020,1.5);
+title('Jason 20 steps')
 
 figure('Name','30 Langkah','NumberTitle','off')
 subplot(3,1,1);plot(hasilRizky3020);findpeaks(hasilRizky3020,1.5);
+title('Rizky 30 steps')
 subplot(3,1,2);plot(hasilAlief3020);findpeaks(hasilAlief3020,1.5);
+title('Alief 30 steps')
 subplot(3,1,3);plot(hasilJason3020);findpeaks(hasilJason3020,1.5);
+title('Jason 30 steps')
 
 figure('Name','Varisasi','NumberTitle','off')
 subplot(3,1,1);plot(hasilVarRizky);findpeaks(hasilVarRizky,1.5);
+title('Rizky 5 steps walking 5 steps running')
 subplot(3,1,2);plot(hasilVarAlief);findpeaks(hasilVarAlief,1.5);
+title('Alief 5 steps walking 5 steps crouch walk')
 subplot(3,1,3);plot(hasilVarJason);findpeaks(hasilVarJason,1.5);
+title('Jason 10 steps running')
