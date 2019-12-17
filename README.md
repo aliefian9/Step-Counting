@@ -21,7 +21,9 @@ Data diambil menggunakan Smartphone yang memiliki aplikasi sensor. Terdapat 12 d
 
 ## Filter
 
-source code diatas, kami menggunakan magnitude untuk mengkitung vektor dari sumbu x, y dan z. Kemudian, magnitude di detrend untuk merapikan data sehingga mudah untuk di fft. Hasil dari fft detrend tersebut nantinya akan digunakan untuk membuat filter. Terakhir, data kemudian di filter dengan menggunakan fungsi filtfilt dan parameter yang digunakan berasal dari design filter yang telah dibuat di atas.
+![Image description](Gambar2.png)
+
+Kami menggunakan magnitude untuk mengkitung vektor dari sumbu x, y dan z. Kemudian, magnitude di detrend untuk merapikan data sehingga mudah untuk di fft. Hasil dari fft detrend tersebut nantinya akan digunakan untuk membuat filter. Terakhir, data kemudian di filter dengan menggunakan fungsi filtfilt dan parameter yang digunakan berasal dari design filter yang telah dibuat di atas.
 
 Filter yang kami design merupakan filter bandpass yang artinya kami memfilter signal yang ada di kiri dan kanan frekuensi cutoff. Tipe filter yang kami gunakan adalah IIR Chebyshev type 2. Kemudian filter order yang kami gunakan adalah 2, dan frekuensi cutoff yang kami input 1,7 dan 2,1. Dan magnitude spesification yang digunakan adalah 50 dB.
 
@@ -42,5 +44,7 @@ Terdapat beberapa faktor yang menyebabkan error, seperti:
 Pedometer yang kami buat masih memiliki tingkat error yang cukup besar, hal-hal tersebut karena frekuensi cutoff yang kurang tepat untuk setiap data, design filter yang belum sempurna, dan perbedaan dari pola langkah dan tempo jalan setiap orang
 
 
-
+## Referensi
+- Helmenstine, T. (2014, May 16). Calculate Percent Error. Retrieved from Science Notes: https://sciencenotes.org/calculate-percent-error/
+- Woodford, C. (2018, September 2018). Pedometers. Retrieved from expainthatstuff!: https://www.explainthatstuff.com/how-pedometers-work.html
  
