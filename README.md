@@ -70,6 +70,8 @@ Data yang kami dapatkan dan hasil yang kami
 peroleh dari perhitungan menggunakan source code matlab kami adalah
 sebagai berikut
 
+![Image description](Gambar1.png)
+
 Terdapat
 beberapa faktor yang menyebabkan error, seperti:
 - Frekuensi
